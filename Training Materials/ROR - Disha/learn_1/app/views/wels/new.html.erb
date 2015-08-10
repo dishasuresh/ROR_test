@@ -1,0 +1,32 @@
+<!-- <form>
+Firstname: <input type="text" value=""><br /><br />
+Lastname:  <input type="text" value=""><br /><br />
+Desig:  <input type="text" value=""><br /><br />
+Origin:  <input type="text" value=""><br /><br />
+
+<label>
+  <input type="submit" value="submit">
+</label>
+</form> -->
+
+
+<%=form_for @welcome do |f|%>
+
+<div class="form-group">
+<%=f.label :firstname%>
+<%=f.text_field :firstname%>
+</div>
+<div class="form-group">
+<%=f.label :lastname%>
+<%=f.text_field :lastname%>
+</div>
+<div class="form-group">
+<%=f.label :desig%>
+<%=f.text_field :desig%>
+</div>
+<div class="form-group">
+<%=f.label :origin%>
+<%=f.text_field :origin%>
+</div>
+<%=f.submit"Submit"%>
+<%end%>

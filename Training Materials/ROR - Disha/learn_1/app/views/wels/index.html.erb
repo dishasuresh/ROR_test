@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+</head>
+<body>
+<h1>Welcome to Ruby on Rails </h1>
+<h2>Listing Users</h2>
+
+   <table border="1px">
+ <tr>
+   <th> First name </th>
+   <th> Last name </th>
+   <th> Designation </th>
+   <th> Origin </th>
+ </tr>
+ <%@welcomes.each do |welcome|%>
+ <tr>
+   <td><%=welcome.firstname %></td>
+   <td><%=welcome.lastname %></td>
+   <td><%=welcome.desig %></td>
+   <td><%=welcome.origin %></td>
+ </tr>
+</table>
+<%end%>
+<%=link_to "Add User", new_wel_path %>
+
+</body>
+</html>
+
+
+
+
